@@ -1,0 +1,2 @@
+# JavaScript-Study
+Practicing JavaScript
