@@ -37,3 +37,14 @@ console.log(appleAndOrangeJuice);
 LECTURE 3 - FUNCTION DECLARATIONS & EXPRESSIONS
 */
 
+// Function Declaration | Can call before defined because of Hoisting
+function calculateAge(fromBirthYear) {
+    return 2037 - fromBirthYear;
+}
+console.log(calculateAge(1989));
+
+// Function Expression | Cannot call before you define it because the const is not initialized
+const calculatingAge = function (fromBirthYear) {
+    return 2037 - fromBirthYear;
+}
+console.log(calculatingAge(1989));
