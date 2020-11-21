@@ -35,7 +35,7 @@ console.log(appleAndOrangeJuice);
 
 /*
 LECTURE 3 - FUNCTION DECLARATIONS & EXPRESSIONS
-*/
+
 
 // Function Declaration | Can call before defined because of Hoisting
 function calculateAge(fromBirthYear) {
@@ -47,4 +47,30 @@ console.log(calculateAge(1989));
 const calculatingAge = function (fromBirthYear) {
     return 2037 - fromBirthYear;
 }
+
 console.log(calculatingAge(1989));
+*/
+
+/*
+LECTURE 4 - ARROW FUNCTIONS
+Added in ES6
+
+
+// Special form of function expression, but shorter
+
+// Arrow Function
+const calculatedAge = fromBirthYear => 2037 - fromBirthYear;
+
+const yearsUntilRetirement = (fromBirthYear, firstName) => {
+    const age = 2037 - fromBirthYear;
+    const retirement = 65 - age;
+    return `${firstName} retires in ${retirement} years.`;
+}
+
+console.log(yearsUntilRetirement(1989, "Jesse"));
+*/
+
+/*
+LECTURE 5 - FUNCTIONS CALLING OTHER FUNCTIONS
+*/
+
