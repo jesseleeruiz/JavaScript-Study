@@ -74,3 +74,16 @@ console.log(yearsUntilRetirement(1989, "Jesse"));
 LECTURE 5 - FUNCTIONS CALLING OTHER FUNCTIONS
 */
 
+function cutFruitIntoPieces(fruit) {
+    return fruit * 4;
+}
+
+function fruitProcessor(apples, oranges) {
+    const applePieces = cutFruitIntoPieces(apples);
+    const orangePieces = cutFruitIntoPieces(oranges);
+
+    const juice = `Juice with ${applePieces} pieces of apples and ${orangePieces} pieces of oranges.`;
+    return juice;
+}
+
+console.log(fruitProcessor(2, 3));
