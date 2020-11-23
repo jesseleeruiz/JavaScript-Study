@@ -187,4 +187,35 @@ console.log(age1);
 
 /*
  LECTURE 9 - BASIC ARRAY OPERATIONS (METHODS)
- */
+
+
+const friends = ["Michael", "Steven", "Peter"];
+
+// Add Elements
+const newLength = friends.push("Jay"); // Returns the new length. So you can put that in a var and use it.
+console.log(friends);
+console.log(newLength);
+
+friends.unshift("John"); // Adds to the front.
+console.log(friends);
+
+// Remove Elements
+friends.pop(); // Removes the last element in the array (This return the popped element).
+console.log(friends);
+
+friends.shift(); // Removes the first element in the array
+console.log(friends);
+
+console.log(friends.indexOf("Steven")); // Return the index where that element is. Returns -1 if it is not in the array
+
+console.log(friends.includes("Steven")); // Returns a Boolean if the element is in the array or not.
+// Above method uses strict equality
+
+if (friends.includes("Steven")) {
+    console.log("You have a friend named Steven.");
+}
+*/
+
+/*
+CODING CHALLNEGE 2
+*/
