@@ -72,7 +72,7 @@ console.log(yearsUntilRetirement(1989, "Jesse"));
 
 /*
 LECTURE 5 - FUNCTIONS CALLING OTHER FUNCTIONS
-*/
+
 
 function cutFruitIntoPieces(fruit) {
     return fruit * 4;
@@ -87,3 +87,29 @@ function fruitProcessor(apples, oranges) {
 }
 
 console.log(fruitProcessor(2, 3));
+*/
+
+/*
+LECTURE 6 - REVIEWING FUNCTIONS
+
+
+const calculateAge = function (birthYear) {
+    return 2037 - birthYear;
+}
+
+const yearsUntilRetirement = function (birthYear, firstName) {
+    const age = calculateAge(birthYear);
+    const retirement = 65 - age;
+
+    if (retirement > 0) {
+        console.log(`${firstName} retires in ${retirement} years.`);
+        return retirement;
+    } else {
+        console.log(`${firstName} has already retired 🎉`);
+        return -1;
+    }
+    return retirement;
+}
+
+console.log(yearsUntilRetirement(1989, "Jesse"));
+*/
