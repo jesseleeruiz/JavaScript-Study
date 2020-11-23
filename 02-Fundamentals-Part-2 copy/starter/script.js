@@ -113,3 +113,37 @@ const yearsUntilRetirement = function (birthYear, firstName) {
 
 console.log(yearsUntilRetirement(1989, "Jesse"));
 */
+
+/*
+CODING CHALLENGE
+
+
+const calculateAverage = (score1, score2, score3) => {
+    return (score1 + score2 + score3) / 3;
+}
+
+// const calcAverage = (number1, number2, number3) => (number1 + number2 + number3) / 3;
+
+const averageDolphins = calculateAverage(44, 23, 71);
+const averageKoalas = calculateAverage(65, 54, 49);
+
+const averageDolphins2 = calculateAverage(85, 54, 41);
+const averageKoalas2 = calculateAverage(23, 34, 27);
+
+function checkWinner(averageScore1, averageScore2) {
+    if (averageScore1 > (averageScore2 * 2)) {
+        console.log(`Dolphins win (${averageScore1} vs. ${averageScore2}).`);
+    } else if (averageScore2 > (averageScore1 * 2)) {
+        console.log(`Koalas win (${averageScore2} vs. ${averageScore1}).`);
+    } else {
+        console.log(`No one wins (${averageScore1} vs. ${averageScore2}).`);
+    }
+}
+
+checkWinner(averageDolphins, averageKoalas);
+checkWinner(averageDolphins2, averageKoalas2);
+*/
+
+/*
+ LECTURE 8 - ARRAYS
+ */
