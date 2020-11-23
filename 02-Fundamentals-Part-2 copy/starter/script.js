@@ -146,4 +146,45 @@ checkWinner(averageDolphins2, averageKoalas2);
 
 /*
  LECTURE 8 - ARRAYS
+
+
+const friend1 = "Michael";
+const friend2 = "Steven";
+const friend3 = "Peter";
+
+// Literal Syntax
+const friends = ["Michael", "Steven", "Peter"];
+console.log(friends);
+
+const years = new Array(1991, 1984, 2008, 2020);
+
+console.log(friends[0]);
+console.log(friends[2]);
+console.log(years[0]);
+
+console.log(`Number of elements in friends array: ${friends.length}`);
+console.log(friends[friends.length - 1]);
+
+friends[2] = "Jay";
+console.log(friends);
+
+const firstName = "Jesse";
+const jesse = [firstName, "Ruiz", 31, friends];
+console.log(jesse);
+
+// Exercise
+
+const calculateAge = function (birthYear) {
+    return 2037 - birthYear;
+}
+
+const newYears = [1990, 1967, 2002, 2010, 2018];
+
+const age1 = calculateAge(newYears[0]);
+
+console.log(age1);
+*/
+
+/*
+ LECTURE 9 - BASIC ARRAY OPERATIONS (METHODS)
  */
