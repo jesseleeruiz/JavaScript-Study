@@ -407,6 +407,58 @@ for (let rep = 1; rep <= 10; rep++) {
 */
 
 /*
- LECTURE 16 -
+ LECTURE 16 - LOOPING ARRAYS, BREAKING, & CONTINUING
+
+
+// Loop arrays
+const jesseArray = [
+    "Jesse",
+    "Ruiz",
+    31,
+    "SWE",
+    ["Michael", "Peter", "Steven"]
+];
+
+const types = [];
+
+// Make sure the second part is always the length of the array
+for (let i = 0; i < jesseArray.length; i++) {
+    console.log(jesseArray[i], typeof jesseArray[i]);
+
+    // type[i] = jesseArray[i];
+    types.push(typeof jesseArray[i]);
+}
+
+console.log(types);
+
+const years = [1991, 2007, 1969, 2020];
+const ages = [];
+
+for (let year = 0; year < years.length; year++) {
+    ages.push(2037 - years[year]);
+}
+
+console.log(ages);
+
+// Continue & Break
+
+//// Continue moves along the rest of the code, whereas, break stops and exits.
+console.log("-----ONLY STRINGS-----");
+for (let i = 0; i < jesseArray.length; i++) {
+    if (typeof jesseArray[i] !== "string") continue;
+
+    console.log(jesseArray[i], typeof jesseArray[i]);
+}
+
+console.log("-----BREAK WITH NUMBER-----");
+for (let i = 0; i < jesseArray.length; i++) {
+    if (typeof jesseArray[i] === "number") break;
+
+    console.log(jesseArray[i], typeof jesseArray[i]);
+}
+*/
+
+/*
+ LECTURE 17 - LOOPING BACKWARDS & LOOPS IN LOOPS
  */
 
