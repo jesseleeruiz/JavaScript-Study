@@ -353,4 +353,60 @@ console.log(jesse.getTheSummary());
 
 /*
 CODING CHALLNEGE 3
+
+
+const mark = {
+    fullName: "Mark Miller",
+    mass: 78,
+    height: 1.69,
+
+    calculateBMI: function () {
+        this.markBMI = this.mass / (this.height ** 2);
+        return this.markBMI;
+    }
+}
+
+const john = {
+    fullName: "Jonn Smith",
+    mass: 92,
+    height: 1.95,
+
+    calculateBMI: function () {
+        this.johnBMI = this.mass / (this.height ** 2);
+        return this.johnBMI;
+    }
+}
+
+const getSummary = function (bmiInputOne, bmiInputTwo) {
+    const markBMI = bmiInputOne.calculateBMI();
+    const johnBMI = bmiInputTwo.calculateBMI();
+
+    if (bmiInputOne > bmiInputTwo) {
+        console.log(`${bmiInputOne.fullName} BMI (${markBMI}) is higher than ${bmiInputTwo.fullName}'s (${johnBMI})!`);
+    } else {
+        console.log(`${bmiInputTwo.fullName} BMI (${johnBMI}) is higher than ${bmiInputOne.fullName}'s (${markBMI})!`);
+    }
+}
+
+console.log(getSummary(mark, john));
 */
+
+/*
+ LECTURE 15 - ITERATION | THE FOR LOOP
+
+
+// For Loop has three parts
+// First, part is setting up what you want to go through (Counter)
+// Second, is what you are going up to
+// Third, how you are increasing or decreasing the counter
+// Then you can write code in the code block.
+
+for (let rep = 1; rep <= 10; rep++) {
+    console.log(`Lifting weights repetition ${rep}!`);
+}
+*/
+
+/*
+ LECTURE 16 -
+ */
+
