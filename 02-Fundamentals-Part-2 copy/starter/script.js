@@ -218,4 +218,35 @@ if (friends.includes("Steven")) {
 
 /*
 CODING CHALLNEGE 2
+
+
+const bills = [125, 555, 44];
+const tips = [];
+
+function calculateTip(billValue) {
+    if (billValue >= 500 || billValue <= 300) {
+        const tipFifteenPercent = billValue * 0.15;
+        tips.push(tipFifteenPercent);
+    } else {
+        const tipTwentyPercent = billValue * 0.20;
+        tips.push(tipTwentyPercent);
+    }
+}
+
+console.log(calculateTip(100));
+
+// Jonas
+
+const calcTip = function (bill) {
+    return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.20;
+}
+
+const calcTip2 = bill => bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.20;
+
+const jBills = [125, 555, 44];
+const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
 */
+
+/*
+ LECTURE 11 - INTRO TO OBJECTS
+ */
