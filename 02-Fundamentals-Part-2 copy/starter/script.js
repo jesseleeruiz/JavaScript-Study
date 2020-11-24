@@ -250,3 +250,12 @@ const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
 /*
  LECTURE 11 - INTRO TO OBJECTS
  */
+
+const jesse = {
+    firstName: "Jesse",
+    lastName: "Ruiz",
+    age: 31,
+    job: "SWE",
+    friends: ["Michael", "Peter", "Steven"]
+};
+
