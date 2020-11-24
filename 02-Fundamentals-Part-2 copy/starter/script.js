@@ -249,7 +249,7 @@ const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
 
 /*
  LECTURE 11 - INTRO TO OBJECTS
- */
+
 
 const jesse = {
     firstName: "Jesse",
@@ -258,4 +258,48 @@ const jesse = {
     job: "SWE",
     friends: ["Michael", "Peter", "Steven"]
 };
+*/
+
+/*
+ LECTURE 12 - DOT VS BRACKET NOTATION
+
+
+const jesse = {
+    firstName: "Jesse",
+    lastName: "Ruiz",
+    age: 31,
+    job: "SWE",
+    friends: ["Michael", "Peter", "Steven"]
+};
+
+// Dot Notation
+console.log(jesse.lastName);
+
+// Bracket - Can put any expression in the brackets.
+console.log(jesse["lastName"]);
+
+const nameKey = "Name";
+console.log(jesse["first" + nameKey]);
+console.log(jesse["last" + nameKey]);
+
+// const interestedIn = prompt("What do you want to know about Jesse. Choose between firstName, lastName, age, job, and friends.");
+
+// if (jesse[interestedIn]) {
+//     console.log(jesse[interestedIn]);
+// } else {
+//     console.log("Wrong request. Choose between firstName, lastName, age, job, and friends.");
+// }
+
+// Adding to the object
+jesse.location = "Hawaii";
+jesse["twitter"] = "@JesseLeeRuiz";
+console.log(jesse);
+
+const challnege = `${jesse.firstName} has ${jesse.friends.length} friends, and his best friend is ${jesse.friends[0]}.`;
+console.log(challnege);
+*/
+
+/*
+ LECTURE 13 - OBJECT METHODS
+ */
 
