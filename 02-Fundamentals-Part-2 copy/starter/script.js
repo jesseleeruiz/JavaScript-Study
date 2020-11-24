@@ -512,3 +512,40 @@ while (dice !== 6) {
 CODING CHALLNEGE 4
 */
 
+const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+const tips = [];
+const totals = [];
+
+function calculateTip(billValue) {
+    if (billValue >= 500 || billValue <= 300) {
+        const tipFifteenPercent = billValue * 0.15;
+        tips.push(tipFifteenPercent);
+        totals.push(tipFifteenPercent + billValue);
+    } else {
+        const tipTwentyPercent = billValue * 0.20;
+        tips.push(tipTwentyPercent);
+        totals.push(tipTwentyPercent + billValue);
+    }
+}
+
+for (let bill = 0; bill <= bills.length; bill++) {
+    console.log(calculateTip(bills[bill]));
+}
+
+// Jonas
+
+const calcTip = function (bill) {
+    return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.20;
+}
+
+const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+const tips = [];
+const totals = [];
+
+for (let i = 0; i < bills.length; i++) {
+    const tip = calcTip(bills[i]);
+    tips.push(tip);
+    totals.push(tip + bills[i]);
+}
+
+console.log(bills, tips, totals);
