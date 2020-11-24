@@ -460,5 +460,31 @@ for (let i = 0; i < jesseArray.length; i++) {
 
 /*
  LECTURE 17 - LOOPING BACKWARDS & LOOPS IN LOOPS
+
+
+const jesse = [
+    "Jesse",
+    "Ruiz",
+    31,
+    "SWE",
+    ["Michael", "Peter", "Steven"]
+];
+
+for (let i = jesse.length - 1; i >= 0; i--) {
+    console.log(jesse[i]);
+}
+
+// Loop in Loop
+for (let exercise = 1; exercise <= 3; exercise++) {
+    console.log(`----- Starting exercise ${exercise}`);
+
+    for (let rep = 1; rep < 6; rep++) {
+        console.log(`Lifting weights repetition: ${rep}`);
+    }
+}
+*/
+
+/*
+ LECTURE 18 - WHILE LOOPS
  */
 
