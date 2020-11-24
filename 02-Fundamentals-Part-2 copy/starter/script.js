@@ -301,5 +301,56 @@ console.log(challnege);
 
 /*
  LECTURE 13 - OBJECT METHODS
- */
 
+
+const jesse = {
+    firstName: "Jesse",
+    lastName: "Ruiz",
+    birthYear: 1989,
+    job: "SWE",
+    friends: ["Michael", "Peter", "Steven"],
+    hsaDriversLicense: true,
+
+    // calculateAge: function (birthYear) {
+    //     return 2037 - birthYear;
+    // }
+
+    // calculateAge: function () {
+    //     return 2037 - this.birthYear;
+    // }
+
+    calculateAge: function () {
+        this.age = 2037 - this.birthYear;
+        return this.age;
+    },
+
+    getSummary: function () {
+        if (this.hsaDriversLicense) {
+            return console.log(`${this.firstName} is a ${this.age}-year old ${this.job}, and he has a driver's license.`);
+        } else {
+            return console.log(`${this.firstName} is a ${this.age}-year old ${this.job}, and he does not have a driver's license.`);
+        }
+    },
+
+    // Jonas
+    getTheSummary: function () {
+        return `${this.firstName} is a ${this.calculateAge()}-year old ${this.job}, and he has ${this.hsaDriversLicense ? "a" : "no"} driver's license.`;
+    }
+};
+
+// Dot
+console.log(jesse.calculateAge(jesse.birthYear));
+
+// Bracket
+console.log(jesse["calculateAge"](jesse.birthYear));
+
+console.log(jesse.age);
+
+console.log(jesse.getSummary());
+
+console.log(jesse.getTheSummary());
+*/
+
+/*
+CODING CHALLNEGE 3
+*/
