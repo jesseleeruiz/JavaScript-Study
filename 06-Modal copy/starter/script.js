@@ -21,3 +21,10 @@ for (let i = 0; i < openModalButtons.length; i++)
 
 closeModalButton.addEventListener('click', closeModal);
 overlay.addEventListener('click', closeModal);
+
+// This doc.addEventListener listens to the whole page
+document.addEventListener('keydown', function (escEvent) {
+  if (escEvent.key === 'Escape' && !modal.classList.contains('hidden')) {
+    closeModal();
+  }
+});
